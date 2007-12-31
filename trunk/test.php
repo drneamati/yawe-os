@@ -1,0 +1,1 @@
+<pre><?phperror_reporting(E_ALL | E_STRICT);include 'compat.php';include 'core.php';include 'json.php';include 'utf8.php';$array = array(		'test' => 'coucou',		'salut' => 'tcho',		'dsd' => 'i'		);		$array2 = array(		'test' => 'coucou',		'salut' => '',		'zarb' => '0'		);var_dump(array_diff_key($array,$array2));var_dump(myarray_diff_key($array,$array2));
