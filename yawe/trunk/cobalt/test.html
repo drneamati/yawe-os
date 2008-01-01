@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Test of CobaltUI</title>
+	
+	<!-- Load: Cobalt User Interface -->
+	<script type="text/javascript" src="cobalt.ui.js"></script>
+	<!-- Load: XCobalt Client -->
+	<link type="text/css" rel="stylesheet" href="XCobaltThemes/default/cobalt.css" />
+	<script type="text/javascript" src="cobalt.x.js"></script>
+	<!-- Bind these two libraries together  -->
+	<script type="text/javascript" src="cobalt.bind.js"></script>
+	<!-- End of loading; Cobalt is usable! -->
+	
+</head>
+
+<body>
+	<div id="xMainDiv" style="width:800px;height:500px;background:#CCC;position:relative;">
+	</div>
+	<script type="text/javascript">
+	    var first = XCobalt.xcore.windowOpen(document.body);
+	    
+	    var second = XCobalt.xcore.windowOpen(document.getElementById('xMainDiv'));
+		second.relativeMove(100, 20);
+	</script>
+</body>
+</html>
